@@ -211,10 +211,10 @@ extension DevicesViewController {
 
                     // Example 1: MQTT Proxy
 
-                    .action(.default(NSLocalizedString("MQTT Proxy", comment: String()))) { _, _ in
-                        self.performSegue(withIdentifier: "toMqttProxyViewController", sender: self)
-                        return
-                    }
+                    /* .action(.default(NSLocalizedString("MQTT Proxy", comment: String()))) { _, _ in
+                         self.performSegue(withIdentifier: "toMqttProxyViewController", sender: self)
+                         return
+                     } */
 
                     // Example 2: Network Config
 
@@ -224,11 +224,12 @@ extension DevicesViewController {
                     }
 
                     // Example 3: Custom GATT MQTT
-
-                    .action(.default(NSLocalizedString("Custom GATT MQTT", comment: String()))) { _, _ in
-                        self.performSegue(withIdentifier: "toCustomGattMqttViewController", sender: self)
-                        return
-                    }
+                    /*
+                     .action(.default(NSLocalizedString("Custom GATT MQTT", comment: String()))) { _, _ in
+                         self.performSegue(withIdentifier: "toCustomGattMqttViewController", sender: self)
+                         return
+                     }
+                     */
                     .action(.cancel(NSLocalizedString("Cancel", comment: String())))
                     .show(on: self)
             } else {
